@@ -1,0 +1,110 @@
+body {
+    width: 320px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #4da6ff;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #2d2d2d;
+    color: white;
+    font-family: inherit;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loading {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 12px;
+}
+
+#results {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.subject-card {
+    background-color: #2d2d2d;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #4da6ff;
+}
+
+.subject-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.subject-stats {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    text-align: center;
+}
+
+
+.missed-dates {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #ff6b6b; /* A soft, readable red */
+    background-color: rgba(255, 107, 107, 0.1);
+    padding: 4px 6px;
+    border-radius: 4px;
+}

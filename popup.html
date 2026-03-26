@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance Calculator</h2>
+        
+        <div class="input-group">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate">
+        </div>
+        
+        <div class="input-group">
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate">
+        </div>
+
+        <div class="input-group">
+            <label for="targetUserId">Target User ID (Optional)</label>
+            <input type="text" id="targetUserId" placeholder="e.g. 68790683fb8e5a06b3b6941a">
+        </div>
+        
+        <button id="calcBtn">Calculate Attendance</button>
+        
+        
+        <div id="loading" class="hidden">
+            <p>Fetching data... This might take a few seconds.</p>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

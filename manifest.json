@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "CT Attendance Calculator by Surya Kiran",
+  "version": "6.7",
+  "description": "Attendance calculator cuz i was too lazy to do it manually (By Surya Kiran)",
+  "permissions": [],
+  "host_permissions": [
+    "*://*.codetantra.com/*"
+  ],
+  "action": {}, 
+  "background": {
+    "service_worker": "background.js" 
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.codetantra.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
