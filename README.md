@@ -12,7 +12,7 @@ A lightweight, extension that automatically calculates your CodeTantra attendanc
 ##  Installation
 
 ### For Google Chrome, Edge, and Brave (Unpacked Zip)
-1. Go to the [Releases](../../) page and download the `CodeTantra-Attendance.zip` file.
+1. Go to the [Releases](https://github.com/no-u296/codetantra-attendance/releases/download/6.7/CodeTantra-Attendance.zip) page and download the `CodeTantra-Attendance.zip` file.
 2. Unzip the folder to a permanent location on your computer.
 3. Open your browser and navigate to `chrome://extensions/`.
 4. Turn on **Developer mode** (usually a toggle in the top right corner).
@@ -20,7 +20,7 @@ A lightweight, extension that automatically calculates your CodeTantra attendanc
 6. Select the unzipped folder. The extension is now installed!
 
 ### For Firefox Desktop & Android (.xpi File)[easy]
-1. Go to the [Releases](../../) page and download the `CodeTantra-Attendance.xpi` file.
+1. Go to the [Releases](https://github.com/no-u296/codetantra-attendance/releases/download/6.7/CodeTantra-Attendance.xpi) page and download the `CodeTantra-Attendance.xpi` file.
 2. Open Firefox and navigate to `about:addons`.
 3. Click the gear icon ⚙️ in the top right corner and select **Install Add-on From File...**
 4. Select the downloaded `.xpi` file and click **Add** when prompted. 
