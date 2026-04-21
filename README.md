@@ -14,7 +14,7 @@ A browser extension that automatically calculates your CodeTantra attendance ove
 * **Security:** Runs 100% locally in your browser.
 
 
-### (From [@AadamAftab](https://github.com/AadamAftab/) )
+### From [@AadamAftab](https://github.com/AadamAftab/)
 * **UI Improvements:** Enhanced popup and UI.
 * **Per-Subject Thresholds:** Configurable attendance thresholds per subject to calculate must-attend and can-skip classes.
 * **Can-skip / must-attend calculator:** See how many classes you need to attend or can skip based on threshold (Default 75%)
@@ -73,7 +73,7 @@ Attended counts and missed dates are summed/deduped across all entries sharing t
 
 
 ## Credits
-- Original project by Surya Kiran(me lol).
+- Original project by Surya Kiran [@no-u296](https://github.com/no-u296/).
 - UI changes and improvements contributed by [@AadamAftab](https://github.com/AadamAftab/).
 
 ## Project Structure
