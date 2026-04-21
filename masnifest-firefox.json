@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "CT Attendance Calculator",
+  "version": "6.7.1",
+  "description": "Attendance calculator cuz i was too lazy to do it manually ",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.codetantra.com/*"
+  ],
+  "action": {}, 
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.codetantra.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+"browser_specific_settings": {
+    "gecko": {
+      "id": "attendance-calc@codetantra.extension",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}
