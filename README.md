@@ -5,25 +5,6 @@ A browser extension that automatically calculates your CodeTantra attendance ove
 ## Downloads
 ![Total Downloads](https://img.shields.io/github/downloads/no-u296/codetantra-attendance/total)
 
-## Features
-### From [@no-u296]()
-* **Accurate Calculation:** Parses native JSON data under the hood to completely avoid CodeTantra's mobile-only UI blocks.
-* **Date Range Filtering:** Check your attendance for specific weeks, months, or the entire semester.
-* **Stalk a Friend:** Search for a specific Roll Number  to check a friend's attendance for a shared class.
-* **Missed Classes Tracker:** Visually flags the exact dates you were marked absent beneath your total percentages.
-* **Security:** Runs 100% locally in your browser.
-
-
-### From [@AadamAftab](https://github.com/AadamAftab/)
-* **UI Improvements:** Enhanced popup and UI.
-* **Per-Subject Thresholds:** Configurable attendance thresholds per subject to calculate must-attend and can-skip classes.
-* **Can-skip / must-attend calculator:** See how many classes you need to attend or can skip based on threshold (Default 75%)
-* **Auto-groups subjects by course code**  CSE102 / Section A and CSE102 by Prof. X become one combined CSE102 entry (The name of course is determined by longest entry)
-* **Storage:** Latest Result is stored for faster access times.
-
-
-Note: Features such as hourly reminder , notification system , What if predictor was not merged from new features PR which can be found on this [repo](https://github.com/AadamAftab/attendance-tracker-extension-iiitb).
-
 
 ## Installation
 
@@ -51,6 +32,26 @@ Who tf uses Safari?
 3. Select your Start and End dates.
 4. *(Optional)* Enter a target User ID to check someone else's attendance.
 5. Click **Calculate Attendance**.
+
+## Features
+### From [@no-u296]()
+* **Accurate Calculation:** Parses native JSON data under the hood to completely avoid CodeTantra's mobile-only UI blocks.
+* **Date Range Filtering:** Check your attendance for specific weeks, months, or the entire semester.
+* **Stalk a Friend:** Search for a specific Roll Number  to check a friend's attendance for a shared class.
+* **Missed Classes Tracker:** Visually flags the exact dates you were marked absent beneath your total percentages.
+* **Security:** Runs 100% locally in your browser.
+
+
+### From [@AadamAftab](https://github.com/AadamAftab/)
+* **UI Improvements:** Enhanced popup and UI.
+* **Per-Subject Thresholds:** Configurable attendance thresholds per subject to calculate must-attend and can-skip classes.
+* **Can-skip / must-attend calculator:** See how many classes you need to attend or can skip based on threshold (Default 75%)
+* **Auto-groups subjects by course code**  CSE102 / Section A and CSE102 by Prof. X become one combined CSE102 entry (The name of course is determined by longest entry)
+* **Storage:** Latest Result is stored for faster access times.
+
+
+Note: Features such as hourly reminder , notification system , What if predictor was not merged from new features PR which can be found on this [repo](https://github.com/AadamAftab/attendance-tracker-extension-iiitb).
+
 
 ## 👨‍💻 Technical Details
 The extension injects a content script into the CodeTantra portal to natively fetch the `/mf` (calendar) and `/mi.jsp` (meeting info) endpoints. Rather than relying on DOM scraping or using iframes, it uses Regex to extract the `im.init` JSON payload directly from the raw HTML. This guarantees flawless attendance tracking regardless of client-side device checks or User-Agent restrictions.
